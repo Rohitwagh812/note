@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Search Engine</title>
+</head>
+<body>
+
+    <div class="main">
+        <h1>Search Engine</h1>
+        <input id="SearchInput" type="text" placeholder="Search For An items">
+    
+
+    <div class="results">
+        <div class="result">
+            <img src="https://picsum.photos/114" alt="">
+            <h4>Product Name</h4>
+            <P>Price : 1000 $</P>
+            <button>Purchase</button>
+        </div>
+        <div class="result">
+            <img src="https://picsum.photos/113" alt="">
+            <h4>Product Name</h4>
+            <P>Price : 1000 $</P>
+            <button>Purchase</button>
+        </div>
+        <div class="result">
+            <img src="https://picsum.photos/112" alt="">
+            <h4>Product Name</h4>
+            <P>Price : 1000 $</P>
+            <button>Purchase</button>
+        </div>
+        <div class="result">
+            <img src="https://picsum.photos/111" alt="">
+            <h4>Product Name</h4>
+            <P>Price : 1000 $</P>
+            <button>Purchase</button>
+        </div>
+    </div>
+</div>
+
+
+
+<script src="./index.js"></script>
+</body>
+</html>
+<style>
+
+
+    @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+    
+     
+    *{
+        padding: 0;
+        margin: 0;
+        font-family: 'Poppins';
+    }
+
+    body{    
+        background: #E8F5E9;
+        height: 100vh;
+        width: 100vw;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        
+        
+    }
+
+    .main{
+        width: 60vw;
+    }
+
+    input{
+        background: #fff;
+        outline: none;
+        border: none;
+        border-bottom: 0.9px solid black;
+        font-size: 1.2rem;
+        padding: 1rem;
+        width: 100%;
+        margin-top: 5vh;
+        color: #00BCD4;
+    }
+    img{
+        height: 100px;
+        width:  7.8rem;
+    }
+
+    .results{
+        display: grid;
+        grid-template-columns: repeat(4 , 1fr);
+    }
+
+    .result{
+        background: #fff;
+        border: 1px solid darkcyan;
+        border-radius: 16px;
+        padding: 1rem;
+        margin: 1rem;
+        cursor: pointer;
+    }
+
+    button{
+        background: darkcyan;
+        color: #fff;
+        font-weight: bold;
+        padding: 0.6rem;
+        border: none;
+        border-radius: 16px;
+        margin-top: 1vh;
+        cursor: pointer;
+    }
+
+</style>
